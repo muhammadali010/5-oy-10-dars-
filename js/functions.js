@@ -1,16 +1,16 @@
-
+// const button = document.getElementById(button)
 async function getDate(url) {
   try {
     const resp = await fetch(url);
     const data = await resp.json();
     return data;
   } catch (error) {
-    return error;
+     return error;
   }
 }
 
 function createDateils(product) {
-return `
+return`
 <div class="container main__container">
     <div class="image">
         <img src="${product.attributes.image}" alt="">
@@ -21,16 +21,7 @@ return `
        <h3>$${product.attributes.price}</h3>
         <p>${product.attributes.description}</p>
 
-        <form>
-        <select id="select">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        </select>
-         <button id="button">Add to bag</button>
-  </form>
+
     </div>
 
 

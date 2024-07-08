@@ -68,8 +68,9 @@ border-bottom: 1px solid rgb(1, 1, 1);
 }
 .info p {
     line-height: 30px;
+    position: absolute;
 }
-button {
+#button {
     cursor: pointer;
     width: 120px;
     height: 40px;
@@ -77,6 +78,9 @@ button {
     color: rgb(255, 255, 255);
     font-size: 15px;
     background-color: rgb(36, 48, 48);
+    position: relative;
+    top: 600px;
+    left: 700px;
 }
 select {
     width: 50px;
